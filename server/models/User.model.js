@@ -20,6 +20,16 @@ const UserSchema = new mongoose.Schema({
   image: {
     type: String,
   },
+  // contacts: [{
+  //   name : String,
+  //   email : String,
+  //   phone : String,
+  //   photo:String 
+  // }],
+  contacts:{
+    type:Array,
+    default:[]
+  },
   createdAt: {
     type: Date,
     default: Date.now,
